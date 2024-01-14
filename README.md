@@ -7,24 +7,24 @@ Implementation of the Simplex algorithm in Python.
 The simplex algorithm is a popular method for solving linear programming problems. Linear programming involves optimizing a linear objective function subject to linear equality and inequality constraints. The simplex algorithm iteratively moves from one feasible solution to another, improving the objective function at each step, until an optimal solution is reached.
 
 Key Steps of the Simplex Algorithm:
-### Initialize the Simplex Tableau:
+#### - Initialize the Simplex Tableau:
 
 Transform the linear programming problem into standard form.
 Create the initial simplex tableau.
 
 ![Screenshot](images/simplex_tableau.png)
-### Identify the Pivot Element:
+#### - Identify the Pivot Element:
 
 Choose a pivot column based on the most negative coefficient in the objective function (if maximizing)
-### Determine the Pivot Row:
+#### - Determine the Pivot Row:
 
 Find the pivot row by selecting the minimum ratio of the right-hand side to the pivot column element.
-### Update the Tableau:
+#### - Update the Tableau:
 
 Use the pivot element to perform row operations, bringing the pivot column to the unit vector and zeroing other elements in the pivot column.
 
 
-### Iterate Until Optimality:
+#### - Iterate Until Optimality:
 
 Repeat steps 2-4 until no negative coefficients exist in the objective row, indicating an optimal solution.
 
@@ -44,11 +44,11 @@ This Python script implements the simplex algorithm for solving linear programmi
 
 ## Usage
 
-### Requirements
+#### - Requirements
 
 Please ensure to have python installed in your machine. Numpy will be needed too.
 
-### Run the script
+#### - Run the script
 
 In the simplexAlgorithm.py, insert the data from your problem, as it is below:
 
