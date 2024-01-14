@@ -2,6 +2,7 @@
 
 Implementation of the Simplex algorithm in Python.
 
+** Note: This implementation is done to resolve problems with exactly 3 decision variables.
 # Introduction
 
 The simplex algorithm is a popular method for solving linear programming problems. Linear programming involves optimizing a linear objective function subject to linear equality and inequality constraints. The simplex algorithm iteratively moves from one feasible solution to another, improving the objective function at each step, until an optimal solution is reached.
